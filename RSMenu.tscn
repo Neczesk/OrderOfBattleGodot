@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://db7m1sjx6vg4m"]
+
+[ext_resource type="PackedScene" uid="uid://dwnjoqq5tgdpq" path="res://BaseWindow.tscn" id="1_6e00f"]
+[ext_resource type="Script" path="res://scripts/RSMenu.cs" id="2_k7f3m"]
+
+[node name="MainDisplay" instance=ExtResource("1_6e00f")]
+script = ExtResource("2_k7f3m")
+
+[node name="CenterContainer" type="CenterContainer" parent="." index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer" index="0"]
+offset_left = 817.0
+offset_top = 444.0
+offset_right = 925.0
+offset_bottom = 470.0
+text = "Ruleset Editor"

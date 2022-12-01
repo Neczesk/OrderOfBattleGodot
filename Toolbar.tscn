@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b0oil4vd0emn"]
+
+[node name="Toolbar" type="PanelContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 31.0
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1725.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+offset_left = 1729.0
+offset_right = 1773.0
+offset_bottom = 31.0
+text = "Save"
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+offset_left = 1777.0
+offset_right = 1857.0
+offset_bottom = 31.0
+text = "Save As..."
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+offset_left = 1861.0
+offset_right = 1920.0
+offset_bottom = 31.0
+text = "Export"

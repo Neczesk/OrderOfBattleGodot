@@ -1,0 +1,246 @@
+[gd_scene load_steps=13 format=3 uid="uid://d23cltp1cq1ag"]
+
+[ext_resource type="Texture2D" uid="uid://bmfwpxt4kwrrg" path="res://icons/add-line.svg" id="1_7mhmf"]
+[ext_resource type="Texture2D" uid="uid://d8v4epe6et41" path="res://icons/menu-line.svg" id="1_bfsnr"]
+[ext_resource type="Script" path="res://scripts/app.cs" id="1_hdoxr"]
+[ext_resource type="StyleBox" uid="uid://wqgevs232wta" path="res://themes/styles/lowersidebarbuttons.tres" id="3_7styx"]
+[ext_resource type="Texture2D" uid="uid://bwp8shm6u33q1" path="res://icons/arrow-left-right-line.svg" id="5_cewjl"]
+[ext_resource type="Texture2D" uid="uid://k2x4d2gdn1s" path="res://icons/edit-box-line.svg" id="5_gm42n"]
+[ext_resource type="PackedScene" uid="uid://dwnjoqq5tgdpq" path="res://BaseWindow.tscn" id="6_e8aey"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6sew"]
+bg_color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[sub_resource type="Theme" id="Theme_0ywqu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bwyi3"]
+
+[sub_resource type="Animation" id="Animation_6nnru"]
+resource_name = "sidebar"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/VBoxContainer/Window/SidePanel:size_flags_stretch_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.1, 0.4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/VBoxContainer/Bar/Panel/HBoxContainer/Menu-Panel:size_flags_stretch_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.1, 0.4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ugisk"]
+_data = {
+"sidebar": SubResource("Animation_6nnru")
+}
+
+[node name="App" type="Node"]
+script = ExtResource("1_hdoxr")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bar" type="Control" parent="UI/VBoxContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 161.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.8
+
+[node name="Panel" type="Panel" parent="UI/VBoxContainer/Bar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/VBoxContainer/Bar/Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu-Panel" type="Panel" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer"]
+offset_right = 174.0
+offset_bottom = 161.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+theme_override_styles/panel = SubResource("StyleBoxFlat_f6sew")
+
+[node name="Button" type="Button" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/Menu-Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("1_bfsnr")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer"]
+offset_left = 178.0
+offset_right = 1920.0
+offset_bottom = 161.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2"]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 1692.0
+offset_bottom = 111.0
+
+[node name="CenterContainer" type="CenterContainer" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer"]
+offset_right = 116.0
+offset_bottom = 61.0
+
+[node name="AppTitle" type="Label" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer/CenterContainer"]
+offset_top = 17.0
+offset_right = 116.0
+offset_bottom = 43.0
+text = "Order of Battle"
+
+[node name="Spacer" type="Control" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 120.0
+offset_right = 323.0
+offset_bottom = 61.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.44
+
+[node name="CenterContainer2" type="CenterContainer" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer"]
+offset_left = 327.0
+offset_right = 405.0
+offset_bottom = 61.0
+
+[node name="ModeTitle" type="Label" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer/CenterContainer2"]
+offset_top = 17.0
+offset_right = 78.0
+offset_bottom = 43.0
+text = "List Editor"
+
+[node name="Spacer2" type="Control" parent="UI/VBoxContainer/Bar/Panel/HBoxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 409.0
+offset_right = 1642.0
+offset_bottom = 61.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.67
+
+[node name="Window" type="HBoxContainer" parent="UI/VBoxContainer"]
+offset_top = 165.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.52
+
+[node name="SidePanel" type="Panel" parent="UI/VBoxContainer/Window"]
+offset_right = 174.0
+offset_bottom = 915.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+theme = SubResource("Theme_0ywqu")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bwyi3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/VBoxContainer/Window/SidePanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Add" type="MarginContainer" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer"]
+offset_right = 174.0
+offset_bottom = 179.0
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer/Add"]
+offset_right = 174.0
+offset_bottom = 179.0
+theme_override_styles/normal = ExtResource("3_7styx")
+icon = ExtResource("1_7mhmf")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Edit" type="MarginContainer" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer"]
+offset_top = 183.0
+offset_right = 174.0
+offset_bottom = 363.0
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer/Edit"]
+offset_right = 174.0
+offset_bottom = 180.0
+theme_override_styles/normal = ExtResource("3_7styx")
+icon = ExtResource("5_gm42n")
+icon_alignment = 1
+
+[node name="MarginContainer5" type="MarginContainer" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer"]
+offset_top = 367.0
+offset_right = 174.0
+offset_bottom = 547.0
+size_flags_vertical = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer"]
+offset_top = 551.0
+offset_right = 174.0
+offset_bottom = 731.0
+size_flags_vertical = 3
+
+[node name="MarginContainer3" type="MarginContainer" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer"]
+offset_top = 735.0
+offset_right = 174.0
+offset_bottom = 915.0
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="UI/VBoxContainer/Window/SidePanel/VBoxContainer/MarginContainer3"]
+offset_right = 174.0
+offset_bottom = 180.0
+theme_override_styles/normal = ExtResource("3_7styx")
+icon = ExtResource("5_cewjl")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MainDisplay" parent="UI/VBoxContainer/Window" instance=ExtResource("6_e8aey")]
+
+[node name="SideBar" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ugisk")
+}
+
+[connection signal="pressed" from="UI/VBoxContainer/Bar/Panel/HBoxContainer/Menu-Panel/Button" to="." method="OnMenuPressed"]
+[connection signal="pressed" from="UI/VBoxContainer/Window/SidePanel/VBoxContainer/Add/Button" to="." method="OnAddPressed"]
+[connection signal="pressed" from="UI/VBoxContainer/Window/SidePanel/VBoxContainer/MarginContainer3/Button" to="." method="OnChangePressed"]

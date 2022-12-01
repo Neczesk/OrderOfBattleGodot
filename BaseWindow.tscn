@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwnjoqq5tgdpq"]
+
+[ext_resource type="StyleBox" uid="uid://dnuiypvc3glmj" path="res://themes/styles/light_panel.tres" id="1_u6sax"]
+[ext_resource type="Script" path="res://scripts/baseWindow.cs" id="2_u3pxr"]
+
+[sub_resource type="Theme" id="Theme_8vwya"]
+
+[node name="MainDisplay" type="Panel"]
+offset_left = 178.0
+offset_right = 1920.0
+offset_bottom = 915.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_8vwya")
+theme_override_styles/panel = ExtResource("1_u6sax")
+script = ExtResource("2_u3pxr")

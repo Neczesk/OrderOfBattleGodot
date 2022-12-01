@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu026h6t3g1gi"]
+
+[ext_resource type="PackedScene" uid="uid://dwnjoqq5tgdpq" path="res://BaseWindow.tscn" id="1_qevv1"]
+[ext_resource type="Script" path="res://scripts/LSMenu.cs" id="2_sahk2"]
+
+[node name="list_editor" instance=ExtResource("1_qevv1")]
+script = ExtResource("2_sahk2")
+
+[node name="CenterContainer" type="CenterContainer" parent="." index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer" index="0"]
+offset_left = 832.0
+offset_top = 444.0
+offset_right = 910.0
+offset_bottom = 470.0
+text = "List Editor"
