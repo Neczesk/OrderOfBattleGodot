@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order Of Battle", "Order Of Battle.csproj", "{3E2616A2-2D17-4C03-8E80-1C95A92E91E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order Of Battle", "OrderOfBattle\Order Of Battle.csproj", "{3E2616A2-2D17-4C03-8E80-1C95A92E91E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{FFBFD0FF-1C68-477D-96BE-94554ECE26D6}"
 EndProject

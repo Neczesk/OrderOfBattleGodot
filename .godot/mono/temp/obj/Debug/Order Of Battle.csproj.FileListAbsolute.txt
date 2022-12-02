@@ -1,0 +1,15 @@
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.csproj.AssemblyReference.cache
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.GeneratedMSBuildEditorConfig.editorconfig
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.AssemblyInfoInputs.cache
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.AssemblyInfo.cs
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.csproj.CoreCompileInputs.cache
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/bin/Debug/Order Of Battle.deps.json
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/bin/Debug/Order Of Battle.runtimeconfig.json
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/bin/Debug/Order Of Battle.dll
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/bin/Debug/Order Of Battle.pdb
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.csproj.CopyComplete
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.dll
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/refint/Order Of Battle.dll
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.pdb
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/Order Of Battle.genruntimeconfig.cache
+/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/Debug/ref/Order Of Battle.dll

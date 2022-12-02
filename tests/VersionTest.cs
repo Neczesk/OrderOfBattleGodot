@@ -1,17 +1,29 @@
 using Xunit;
-using Prime.Services;
+using Model;
 
-namespace Prime.UnitTests.Services
+
+namespace OrderOfBattle.UnitTests.Version
 {
-    public class PrimeService_IsPrimeShould
+    public class VersionTest
     {
         [Fact]
-        public void IsPrime_InputIs1_ReturnFalse()
+        public void CreateFromInts()
         {
-            var primeService = new PrimeService();
-            bool result = primeService.IsPrime(1);
-
-            Assert.False(result, "1 should not be prime");
+            Model.Version v = new Model.Version(0,1,0);
+            Assert.Equal<string>("0.1.0", v.ToString());
+        }
+        [Fact]
+        public void CreateFromString()
+        {
+            Model.Version v = new Model.Version("0.1.0");
+            Assert.Equal<string>("0.1.0", v.ToString());
+        }
+        [Fact]
+        public void Compare()
+        {
+            Model.Version v = new Model.Version("0.3.0");
+            Model.Version t = new Model.Version("0.2.0");
+            Assert.True(v.CompareTo(t) > 0);
         }
     }
 }

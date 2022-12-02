@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Order Of Battle.csproj" />
+    <ProjectReference Include="..\OrderOfBattle\Order Of Battle.csproj" />
   </ItemGroup>
 
 </Project>
