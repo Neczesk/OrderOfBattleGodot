@@ -1,13 +1,20 @@
 using System;
-namespace Model {
+using Newtonsoft.Json;
+namespace OrderOfBattle.Model.Ruleset {
     public class Version : System.IComparable<Version>{
-        private int Major;
-        private int Minor;
-        private int Release;
+        public int Major;
+        public int Minor;
+        public int Release;
         public Version(int m, int mm, int r){
             Major = m;
             Minor = mm;
             Release = r;
+        }
+        [JsonConstructor]
+        public Version(string major, string minor, string release){
+            Major = int.Parse(major);
+            Minor = int.Parse(minor);
+            Release = int.Parse(release);
         }
         public Version(string v){
             string[] split = v.Split(".");

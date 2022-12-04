@@ -11,7 +11,7 @@
         "projectName": "Order Of Battle",
         "projectPath": "/home/kyle/Projects/gdprojects/OrderOfBattle/OrderOfBattle/Order Of Battle.csproj",
         "packagesPath": "/home/kyle/.nuget/packages/",
-        "outputPath": "/home/kyle/Projects/gdprojects/OrderOfBattle/.godot/mono/temp/obj/",
+        "outputPath": "/home/kyle/Projects/gdprojects/OrderOfBattle/OrderOfBattle/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/home/kyle/.local/share/godot/mono/GodotNuGetFallbackFolder"
@@ -53,6 +53,10 @@
             "GodotSharpEditor": {
               "target": "Package",
               "version": "[4.0.0-beta.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             }
           },
           "imports": [
@@ -120,6 +124,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

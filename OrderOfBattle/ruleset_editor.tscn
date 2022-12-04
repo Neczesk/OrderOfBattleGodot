@@ -37,14 +37,14 @@ size_flags_vertical = 3
 [node name="Metadata" type="PanelContainer" parent="VBoxContainer/VBoxContainer" index="0"]
 layout_mode = 2
 offset_right = 1742.0
-offset_bottom = 401.0
+offset_bottom = 466.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata" index="0"]
 layout_mode = 2
 offset_right = 1742.0
-offset_bottom = 401.0
+offset_bottom = 466.0
 
-[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="0"]
+[node name="MetadataTitle" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="0"]
 layout_mode = 2
 offset_right = 1742.0
 offset_bottom = 37.0
@@ -53,21 +53,21 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer2" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MetadataTitle" index="0"]
 layout_mode = 2
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 1737.0
 offset_bottom = 37.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer2/HBoxContainer" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MetadataTitle/HBoxContainer" index="0"]
 layout_mode = 2
 offset_top = 3.0
 offset_right = 136.0
 offset_bottom = 29.0
 text = "Ruleset Metadata"
 
-[node name="Control" type="Control" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer2/HBoxContainer" index="1"]
+[node name="Control" type="Control" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MetadataTitle/HBoxContainer" index="1"]
 layout_mode = 2
 anchors_preset = 0
 offset_left = 140.0
@@ -75,14 +75,14 @@ offset_right = 1696.0
 offset_bottom = 32.0
 size_flags_horizontal = 3
 
-[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer2/HBoxContainer" index="2"]
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MetadataTitle/HBoxContainer" index="2"]
 layout_mode = 2
 offset_left = 1700.0
 offset_right = 1732.0
 offset_bottom = 32.0
 icon = ExtResource("4_1o4gm")
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="1"]
+[node name="Metadata" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="1"]
 layout_mode = 2
 offset_top = 41.0
 offset_right = 1742.0
@@ -92,7 +92,7 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata" index="0"]
 layout_mode = 2
 offset_left = 10.0
 offset_top = 10.0
@@ -100,7 +100,7 @@ offset_right = 1732.0
 offset_bottom = 218.0
 theme_override_constants/separation = 20
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer" index="0"]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer" index="0"]
 layout_mode = 2
 offset_right = 1722.0
 offset_bottom = 153.0
@@ -110,12 +110,12 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 30
 columns = 2
 
-[node name="GameName" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer" index="0"]
+[node name="GameName" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer" index="0"]
 layout_mode = 2
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameName" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameName" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 2.0
@@ -123,20 +123,20 @@ offset_right = 150.0
 offset_bottom = 28.0
 text = "Game Name:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameName" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameName" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="GameAuthor" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer" index="1"]
+[node name="GameAuthor" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer" index="1"]
 layout_mode = 2
 offset_left = 374.0
 offset_right = 728.0
 offset_bottom = 31.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameAuthor" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameAuthor" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 2.0
@@ -144,20 +144,20 @@ offset_right = 150.0
 offset_bottom = 28.0
 text = "Game Author:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameAuthor" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameAuthor" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="Version" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer" index="2"]
+[node name="Version" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer" index="2"]
 layout_mode = 2
 offset_top = 61.0
 offset_right = 354.0
 offset_bottom = 92.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Version" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Version" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 2.0
@@ -165,21 +165,21 @@ offset_right = 150.0
 offset_bottom = 28.0
 text = "Game Version:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Version" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Version" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="Author" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer" index="3"]
+[node name="Author" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer" index="3"]
 layout_mode = 2
 offset_left = 374.0
 offset_top = 61.0
 offset_right = 728.0
 offset_bottom = 92.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Author" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Author" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 2.0
@@ -187,20 +187,20 @@ offset_right = 150.0
 offset_bottom = 28.0
 text = "File Author:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Author" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Author" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="RootCategory" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer" index="4"]
+[node name="RootCategory" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer" index="4"]
 layout_mode = 2
 offset_top = 122.0
 offset_right = 354.0
 offset_bottom = 153.0
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/RootCategory" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/RootCategory" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 2.0
@@ -208,21 +208,21 @@ offset_right = 150.0
 offset_bottom = 28.0
 text = "Root Category:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/RootCategory" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/RootCategory" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
 offset_right = 354.0
 offset_bottom = 31.0
 
-[node name="Description" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer" index="1"]
+[node name="Description" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer" index="1"]
 layout_mode = 2
 offset_top = 173.0
 offset_right = 1722.0
 offset_bottom = 208.0
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/Description" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/Description" index="0"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 offset_top = 4.0
@@ -230,7 +230,7 @@ offset_right = 150.0
 offset_bottom = 30.0
 text = "Game Description: "
 
-[node name="LineEdit" type="TextEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/Description" index="1"]
+[node name="LineEdit" type="TextEdit" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/Description" index="1"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 offset_left = 154.0
@@ -251,10 +251,70 @@ disabled = true
 icon = ExtResource("5_0q2ur")
 icon_alignment = 1
 
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameName/LineEdit" to="." method="OnMetadataChanged"]
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/GameAuthor/LineEdit" to="." method="OnMetadataChanged"]
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Version/LineEdit" to="." method="OnMetadataChanged"]
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/Author/LineEdit" to="." method="OnMetadataChanged"]
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/GridContainer/RootCategory/LineEdit" to="." method="OnMetadataChanged"]
-[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer/Description/LineEdit" to="." method="OnMetadataChanged" binds= ["text"]]
+[node name="ElementsTitle" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="3"]
+layout_mode = 2
+offset_top = 405.0
+offset_right = 1742.0
+offset_bottom = 442.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/ElementsTitle" index="0"]
+layout_mode = 2
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1737.0
+offset_bottom = 37.0
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/ElementsTitle/HBoxContainer" index="0"]
+layout_mode = 2
+offset_top = 3.0
+offset_right = 121.0
+offset_bottom = 29.0
+text = "Game Elements"
+
+[node name="Control" type="Control" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/ElementsTitle/HBoxContainer" index="1"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 125.0
+offset_right = 1696.0
+offset_bottom = 32.0
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/ElementsTitle/HBoxContainer" index="2"]
+layout_mode = 2
+offset_left = 1700.0
+offset_right = 1732.0
+offset_bottom = 32.0
+icon = ExtResource("4_1o4gm")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer" index="4"]
+layout_mode = 2
+offset_top = 446.0
+offset_right = 1742.0
+offset_bottom = 466.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer" index="0"]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1732.0
+offset_bottom = 10.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MarginContainer/VBoxContainer" index="0"]
+layout_mode = 2
+offset_right = 1722.0
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/MetadataTitle/HBoxContainer/Button" to="." method="OnMetadataFold"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameName/LineEdit" to="." method="OnMetadataChanged"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/GameAuthor/LineEdit" to="." method="OnMetadataChanged"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Version/LineEdit" to="." method="OnMetadataChanged"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/Author/LineEdit" to="." method="OnMetadataChanged"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/GridContainer/RootCategory/LineEdit" to="." method="OnMetadataChanged"]
+[connection signal="text_changed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/Metadata/VBoxContainer/Description/LineEdit" to="." method="OnMetadataChanged" binds= ["text"]]
 [connection signal="pressed" from="VBoxContainer/VBoxContainer/Metadata/VBoxContainer/AddButton" to="." method="OnRuleSetSubmit"]

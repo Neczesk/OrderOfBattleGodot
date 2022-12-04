@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pa39SId3vFol6RwJ/pHxp55LxtgR66mpO53KHSo1BVEnx+d0/UVq8pWFdtq2sSKHpuD84wJ7NVkpOf/L6yn9tA==",
+  "dgSpecHash": "tYR2IJmfThloCRJHs46StROkbkhNZS4JzdfpM0ZwSdFtI7LqSjEr+T/m865zfmZBEu17pN+cZIepbqgexIVBRQ==",
   "success": true,
   "projectFilePath": "/home/kyle/Projects/gdprojects/OrderOfBattle/OrderOfBattle/Order Of Battle.csproj",
   "expectedPackageFiles": [
-    "/home/kyle/.nuget/packages/godot.sourcegenerators/4.0.0-beta.6/godot.sourcegenerators.4.0.0-beta.6.nupkg.sha512",
-    "/home/kyle/.nuget/packages/godotsharp/4.0.0-beta.6/godotsharp.4.0.0-beta.6.nupkg.sha512",
-    "/home/kyle/.nuget/packages/godotsharpeditor/4.0.0-beta.6/godotsharpeditor.4.0.0-beta.6.nupkg.sha512"
+    "/home/kyle/.local/share/godot/mono/GodotNuGetFallbackFolder/godot.sourcegenerators/4.0.0-beta.6/godot.sourcegenerators.4.0.0-beta.6.nupkg.sha512",
+    "/home/kyle/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharp/4.0.0-beta.6/godotsharp.4.0.0-beta.6.nupkg.sha512",
+    "/home/kyle/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharpeditor/4.0.0-beta.6/godotsharpeditor.4.0.0-beta.6.nupkg.sha512",
+    "/home/kyle/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }
