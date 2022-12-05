@@ -10,7 +10,5 @@ namespace OrderOfBattle.Model.Ruleset
         public int ParentID;
         public int ChildId;
         public int Cost;
-        public int Minimum;
-        public int Maximum;
     }
 }

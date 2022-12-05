@@ -1,0 +1,7 @@
+Model:
+  ☐ Implement Ruleset Class
+    Metada:
+      ✔ Name, author, game author, version, last_modified, description @done(22-12-02 18:32)
+    Elements:
+      ☐ Implement Element
+      
